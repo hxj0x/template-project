@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>hxj0x.boot</groupId>
+    <artifactId>pom-dependencies</artifactId>
+    <version>${revision}</version>
+    <packaging>pom</packaging>
+
+    <name>pom-dependencies</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <revision>0.0.1-snapshot</revision>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- 统一依赖管理 -->
+        <spring.boot.version>2.7.14</spring.boot.version>
+        <!-- Web 相关 -->
+        <springdoc.version>1.7.0</springdoc.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- 统一依赖管理 -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springdoc</groupId>
+                <artifactId>springdoc-openapi-ui</artifactId>
+                <version>${springdoc.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>

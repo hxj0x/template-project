@@ -1,0 +1,7 @@
+server:
+  port: 28080
+  servlet:
+    context-path: /template-api
+spring:
+  application:
+    name: template-api
