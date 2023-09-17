@@ -5,3 +5,13 @@ server:
 spring:
   application:
     name: template-api
+  profiles:
+    # local, dev, prod
+    default: local
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui
