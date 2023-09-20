@@ -17,6 +17,10 @@
         <spring.boot.version>2.7.14</spring.boot.version>
         <!-- Web 相关 -->
         <springdoc.version>1.7.0</springdoc.version>
+        <!-- SQL相关 -->
+        <jsqlparser.version>4.7</jsqlparser.version>
+        <!-- 解析java语法 -->
+        <javaparser.version>3.25.5</javaparser.version>
     </properties>
 
     <dependencyManagement>
@@ -34,6 +38,24 @@
                 <groupId>org.springdoc</groupId>
                 <artifactId>springdoc-openapi-ui</artifactId>
                 <version>${springdoc.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.jsqlparser</groupId>
+                <artifactId>jsqlparser</artifactId>
+                <version>${jsqlparser.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.javaparser</groupId>
+                <artifactId>javaparser-symbol-solver-core</artifactId>
+                <version>${javaparser.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.javaparser</groupId>
+                <artifactId>javaparser-core</artifactId>
+                <version>${javaparser.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
