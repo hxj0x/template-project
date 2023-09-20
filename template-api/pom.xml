@@ -13,6 +13,7 @@
     <module>pom-dependencies</module>
     <module>teamplate-main</module>
     <module>tpl-biz-system</module>
+      <module>tpl-biz-codegen</module>
   </modules>
 
   <properties>

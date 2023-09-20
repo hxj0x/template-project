@@ -6,6 +6,8 @@ import hxj.boot.biz.system.framework.CommonResult;
 import hxj.boot.biz.system.service.AdminAuthService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,6 +23,7 @@ import javax.annotation.Resource;
 @RestController
 @RequestMapping("/system/auth")
 public class AuthController {
+
 
     @Resource
     private AdminAuthService authService;
