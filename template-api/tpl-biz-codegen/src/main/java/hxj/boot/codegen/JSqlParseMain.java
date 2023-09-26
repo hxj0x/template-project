@@ -44,7 +44,7 @@ public class JSqlParseMain {
                 "    deleted     bit          default b'0'              not null comment '是否删除'\n" +
                 ")\n" +
                 "    comment '数据源配置表' collate = utf8mb4_unicode_ci;");
-        System.out.println(statements);
+        System.out.println(statements.toString());
 
         // for (Statement statement : statements) {
         //     if (statement instanceof CreateTable) {
