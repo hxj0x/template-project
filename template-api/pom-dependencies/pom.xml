@@ -19,8 +19,12 @@
         <springdoc.version>1.7.0</springdoc.version>
         <!-- SQL相关 -->
         <jsqlparser.version>4.7</jsqlparser.version>
+        <druid.version>1.2.19</druid.version>
         <!-- 解析java语法 -->
         <javaparser.version>3.25.5</javaparser.version>
+        <mybatis-plus.version>3.5.3.2</mybatis-plus.version>
+        <!-- 模板引擎 -->
+        <velocity.version>2.3</velocity.version>
     </properties>
 
     <dependencyManagement>
@@ -56,6 +60,30 @@
                 <groupId>com.github.javaparser</groupId>
                 <artifactId>javaparser-core</artifactId>
                 <version>${javaparser.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-generator</artifactId>
+                <version>${mybatis-plus.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.velocity</groupId>
+                <artifactId>velocity-engine-core</artifactId>
+                <version>${velocity.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>${druid.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

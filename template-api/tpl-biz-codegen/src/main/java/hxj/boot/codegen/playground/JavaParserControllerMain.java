@@ -1,4 +1,4 @@
-package hxj.boot.codegen;
+package hxj.boot.codegen.playground;
 
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.Modifier;

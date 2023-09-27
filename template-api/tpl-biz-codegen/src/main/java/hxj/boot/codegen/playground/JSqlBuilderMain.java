@@ -1,4 +1,4 @@
-package hxj.boot.codegen;
+package hxj.boot.codegen.playground;
 
 import net.sf.jsqlparser.schema.Table;
 import net.sf.jsqlparser.statement.Statement;

@@ -1,0 +1,1 @@
+create database `template-api` default character set utf8mb4;

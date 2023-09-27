@@ -6,5 +6,5 @@ create table infra_codegen_table
     remark        varchar(500)            null comment '备注',
     class_name    varchar(100) default '' not null comment '类名称',
     class_comment varchar(50)             not null comment '类描述',
-    author        varchar(50)             not null comment '作者',
+    author        varchar(50)             not null comment '作者'
 );

@@ -8,6 +8,10 @@ spring:
   profiles:
     # local, dev, prod
     default: local
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/template-api?useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
+    username: root
+    password: root
 springdoc:
   api-docs:
     enabled: true

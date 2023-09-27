@@ -2,4 +2,15 @@
 
 要支持纯后台API的使用形式，也支持界面使用。
 
-* 编写ER图，根据ER图生成controller、service、entity、mapper等文件
+* 目标，通过一个数据模型，生成前后端代码，包括：
+    * 后端：数据库表(mysql\h2\pgsql\dm)、模型、控制器、服务
+
+* 生成数据模型的方法
+* 已有数据库表，导入后根据数据库表生成模型，允许手动调整，比如增加逻辑关联
+* 允许在注释中增加各种定义?
+* 自动生成ER图
+
+流程
+
+* table -> meta-model(参考erupt) -> crud代码
+* meta-model -> ER图
