@@ -1,10 +1,15 @@
 import App from "@/App";
+import DndTable from "@/pages/DndTable";
 import { createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <App />,
+    },
+    {
+        path: "/DndTable",
+        element: <DndTable />,
     },
     // {
     //     path: "/",
